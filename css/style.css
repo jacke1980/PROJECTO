@@ -5,6 +5,11 @@
   --color-headings: #0e0435;
   --color-body-text: #918ca4;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
@@ -113,8 +118,10 @@ p {
   border: 0;
   border-radius: 40px;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   white-space: nowrap;
+  margin: 1rem 0;
 }
 .btn--primary {
   background: var(--color-primary);
@@ -137,4 +144,8 @@ p {
 }
 .btn--accent:hover {
   background-color: #f81e01;
+}
+.btn--block {
+  width: 100%;
+  display: inline-block;
 }
