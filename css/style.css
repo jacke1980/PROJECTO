@@ -285,3 +285,68 @@ p {
     object-fit: cover;
   }
 }
+/*collapsible*/
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+.collapsible--chevron {
+  transform: rotate(0);
+}
+.collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+.collapsible--expanded .collapsible--chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+/*blocks*/
+.block {
+  padding: 6rem 2rem;
+  border: 2px solid black;
+  background: #ccc;
+}
+.block__heading {
+  margin-top: 0;
+}
+.block--dark {
+  background: black;
+  color: #7b858b;
+}
+.block--dark .block__heading {
+  color: #fff;
+}
+.block--skewed-right {
+  clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+}
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 93% 0%, 100% 100%, 7% 100%);
+}
+.block--skewed-right .block__heading,
+.block--skewed-left .block__heading {
+  text-align: center;
+}
+.block--skewed-right .block-skewed-p,
+.block--skewed-left .block-skewed-p {
+  text-align: center;
+}
+/*Nav-Bar*/
+.logo__img {
+  width: 40px;
+  height: 40px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
