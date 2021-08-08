@@ -351,9 +351,9 @@ p {
   height: 40px;
 }
 .nav {
-  padding: 1rem;
   background: rosybrown;
 }
+
 .nav .list--inline {
   color: rgb(235, 231, 231);
   font-size: 2rem;
@@ -363,6 +363,13 @@ p {
   padding: 1rem 0;
   border-bottom: 1px dotted rgb(235, 231, 231);
 }
+.logo {
+  padding: 1rem 0;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
 .list__item a {
   color: #fff;
   text-decoration: none;
@@ -370,8 +377,13 @@ p {
 .logo {
   background: rgb(189, 120, 120);
 }
+.list__item {
+  text-transform: none;
+  color: #fff;
+}
 .logo a {
   color: #fff;
+  text-decoration: none;
   text-transform: uppercase;
 }
 .sub-nav {
@@ -402,9 +414,6 @@ p {
 
 .sub-nav .sub__list {
   padding: 0 2rem;
-}
-.list__item:hover {
-  background: rgb(189, 120, 120);
 }
 
 @media screen and (min-width: 768px) {
@@ -444,6 +453,7 @@ p {
   .sub__list a:hover {
     color: #fff;
   }
+
   .sub-nav .sub__list {
     padding: 1rem 0;
   }
